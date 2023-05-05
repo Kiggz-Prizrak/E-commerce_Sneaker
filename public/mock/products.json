@@ -1,0 +1,116 @@
+[
+  {
+    "id": 1,
+    "factory": "SNEAKER COMPANY",
+    "title": "Fall Limited Edition Sneakers",
+    "description": "The low-prfile snakers are your perfect casual wea companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer",
+    "price": 250.00,
+    "promotion": 50,
+    "thumbnail": [
+      "image-product-1-thumbnail.jpg", "image-product-2-thumbnail.jpg", "image-product-3-thumbnail.jpg", "image-product-4-thumbnail.jpg"
+    ],
+    "images" : [
+      "image-product-1.jpg", "image-product-2.jpg", "image-product-3.jpg", "image-product-4.jpg"
+    ]
+  },
+    {
+      "id": 1,
+      "factory": "SNEAKER COMPANY",
+      "title": "Fall Limited Edition Sneakers",
+      "description": "The low-prfile snakers are your perfect casual wea companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer",
+      "price": 250.0,
+      "promotion": 50,
+      "thumbnail": [
+        "image-product-1-thumbnail.jpg",
+        "image-product-2-thumbnail.jpg",
+        "image-product-3-thumbnail.jpg",
+        "image-product-4-thumbnail.jpg"
+      ],
+      "images": [
+        "image-product-1.jpg",
+        "image-product-2.jpg",
+        "image-product-3.jpg",
+        "image-product-4.jpg"
+      ]
+    },
+      {
+        "id": 1,
+        "factory": "SNEAKER COMPANY",
+        "title": "Fall Limited Edition Sneakers",
+        "description": "The low-prfile snakers are your perfect casual wea companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer",
+        "price": 250.0,
+        "promotion": 50,
+        "thumbnail": [
+          "image-product-1-thumbnail.jpg",
+          "image-product-2-thumbnail.jpg",
+          "image-product-3-thumbnail.jpg",
+          "image-product-4-thumbnail.jpg"
+        ],
+        "images": [
+          "image-product-1.jpg",
+          "image-product-2.jpg",
+          "image-product-3.jpg",
+          "image-product-4.jpg"
+        ]
+      },
+        {
+          "id": 1,
+          "factory": "SNEAKER COMPANY",
+          "title": "Fall Limited Edition Sneakers",
+          "description": "The low-prfile snakers are your perfect casual wea companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer",
+          "price": 250.0,
+          "promotion": 50,
+          "thumbnail": [
+            "image-product-1-thumbnail.jpg",
+            "image-product-2-thumbnail.jpg",
+            "image-product-3-thumbnail.jpg",
+            "image-product-4-thumbnail.jpg"
+          ],
+          "images": [
+            "image-product-1.jpg",
+            "image-product-2.jpg",
+            "image-product-3.jpg",
+            "image-product-4.jpg"
+          ]
+        },
+          {
+            "id": 1,
+            "factory": "SNEAKER COMPANY",
+            "title": "Fall Limited Edition Sneakers",
+            "description": "The low-prfile snakers are your perfect casual wea companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer",
+            "price": 250.0,
+            "promotion": 50,
+            "thumbnail": [
+              "image-product-1-thumbnail.jpg",
+              "image-product-2-thumbnail.jpg",
+              "image-product-3-thumbnail.jpg",
+              "image-product-4-thumbnail.jpg"
+            ],
+            "images": [
+              "image-product-1.jpg",
+              "image-product-2.jpg",
+              "image-product-3.jpg",
+              "image-product-4.jpg"
+            ]
+          },
+            {
+              "id": 1,
+              "factory": "SNEAKER COMPANY",
+              "title": "Fall Limited Edition Sneakers",
+              "description": "The low-prfile snakers are your perfect casual wea companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer",
+              "price": 250.0,
+              "promotion": 50,
+              "thumbnail": [
+                "image-product-1-thumbnail.jpg",
+                "image-product-2-thumbnail.jpg",
+                "image-product-3-thumbnail.jpg",
+                "image-product-4-thumbnail.jpg"
+              ],
+              "images": [
+                "image-product-1.jpg",
+                "image-product-2.jpg",
+                "image-product-3.jpg",
+                "image-product-4.jpg"
+              ]
+            }
+]
