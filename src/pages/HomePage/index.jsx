@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div>
       <ul>
-        {data.map(({ id, title, thumbnail }) => (
-          <li key={id}>
+        {data.map(({ id, title, thumbnail }, i) => (
+          <li key={i}>
             <Card title={title} id={id} thumbnail={thumbnail[0]} />
           </li>
         ))}

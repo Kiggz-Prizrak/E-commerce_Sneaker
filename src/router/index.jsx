@@ -8,8 +8,8 @@ import {getAllArticles, getOneArticles} from '../api'
 import Root from './Root'
 
 import ErrorPage from "../pages/ErrorPage";
-import Home from "../pages/Home";
-import Article from "../pages/Article";
+import Home from "../pages/HomePage";
+import Article from "../pages/ArticlePage";
 
 
 const router = createBrowserRouter([

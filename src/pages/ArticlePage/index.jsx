@@ -14,9 +14,10 @@ export default function Article() {
     images,
   } = useLoaderData();
 
+
   return (
     <div>
-      <ArticleGallery thumbnail={thumbnail} image={images} />
+      <ArticleGallery thumbnail={thumbnail} images={images} title={title} />
       <ArticleDescription
         id={id}
         factory={factory}

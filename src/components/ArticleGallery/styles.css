@@ -1,0 +1,33 @@
+.articleGalleryContainer {
+  max-width: 500px;
+}
+
+.thumbnailGallery {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 0;
+  border: none;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.ImageVisible img {
+  width: 100%;
+}
+
+.thumbnailCard {
+  margin: 0;
+  width: 21%;
+}
+.thumbnailCardSelected {
+  margin: 0;
+  width: 21%;
+  border: solid 3px orange;
+  height: auto;
+}
+.thumbnailCardSelected img {
+  filter: opacity(20%);
+}
