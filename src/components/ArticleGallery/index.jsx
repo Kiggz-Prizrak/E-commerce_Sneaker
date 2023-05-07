@@ -1,14 +1,24 @@
 import { useState } from "react";
 import "./styles.css";
 
-export default function ArticleGallery({ thumbnail, images, title }) {
+export default function ArticleGallery({
+  thumbnail,
+  images,
+  title,
+  openSlideshow,
+  setOpenSlideshow,
+  setSlideIndex,
+}) {
   console.log(images);
 
   const [index, setIndex] = useState(0);
 
   return (
     <div className="articleGalleryContainer">
-      <button className="ImageVisible">
+      <button onClick={() => {
+        setSlideIndex(index)
+        setOpenSlideshow(!openSlideshow)
+      }} className="ImageVisible">
         <img
           className=""
           src={`http://127.0.0.1:5173/mock/product/image/${images[index]}`}

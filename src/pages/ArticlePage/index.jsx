@@ -1,8 +1,15 @@
 import { useLoaderData } from "react-router-dom";
 import ArticleDescription from "../../components/ArticleDescription";
 import ArticleGallery from "../../components/ArticleGallery";
+import Slideshow from "../../components/Slideshow";
+import { useState } from "react";
+
+import './styles.css'
 
 export default function Article() {
+  const [openSlideshow, setOpenSlideshow] = useState(false);
+  const [slideIndex, setSlideIndex] = useState(0);
+
   const {
     id,
     factory,
@@ -14,18 +21,42 @@ export default function Article() {
     images,
   } = useLoaderData();
 
-
   return (
-    <div>
-      <ArticleGallery thumbnail={thumbnail} images={images} title={title} />
-      <ArticleDescription
-        id={id}
-        factory={factory}
-        title={title}
-        description={description}
-        price={price}
-        promotion={promotion}
-      />
+    <div className="articlePageContainer">
+      <div className="articleContainer">
+        <ArticleGallery
+          thumbnail={thumbnail}
+          images={images}
+          title={title}
+          openSlideshow={openSlideshow}
+          setOpenSlideshow={setOpenSlideshow}
+          setSlideIndex={setSlideIndex}
+        />
+        <ArticleDescription
+          id={id}
+          factory={factory}
+          title={title}
+          description={description}
+          price={price}
+          promotion={promotion}
+        />
+      </div>
+
+      {openSlideshow ? (
+        <div className="slideshowContainer">
+          <Slideshow
+            thumbnail={thumbnail}
+            images={images}
+            title={title}
+            slideIndex={slideIndex}
+            openSlideshow={openSlideshow}
+            setOpenSlideshow={setOpenSlideshow}
+            setSlideIndex={setSlideIndex}
+          />
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

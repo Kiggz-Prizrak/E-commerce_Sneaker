@@ -1,0 +1,71 @@
+
+/* ============================ */
+
+.slideContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.closeButton {
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 50px;
+}
+
+.closeButton img{
+  width: 100%;
+}
+
+.slideContainer button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.slideContainer button img{
+  width: 12px;
+}
+
+.leftArrow{
+  position: absolute;
+  left: -30px;
+}
+.rightArrow{
+  position: absolute;
+  transform: rotate(180deg);
+  right: -30px;
+}
+
+.slide{
+  width: 100%;
+  border-radius: 25px;
+}
+
+.slidesGallery {
+  display: flex ;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.slidesGallery button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slideSelected {
+  border: solid 3px orange;
+  display: flex;
+ 
+}
+.slideSelected img {
+  filter: opacity(20%);
+  width: 100%;
+  height: 100%;
+}
