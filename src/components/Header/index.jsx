@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 
 import logo from '../../assets/logo.svg';
 
+import Cart from '../Cart'
+
 import "./styles.css";
 
 export default function Header() {
@@ -17,10 +19,7 @@ export default function Header() {
           <NavLink to="/">Contact</NavLink>
         </nav>
       </div>
-      {/* cart  */}
-      <div className="Cart">
-
-      </div>
+      <Cart />
     </div>
   );
 }

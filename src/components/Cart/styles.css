@@ -1,0 +1,10 @@
+.cartContainer {
+  width: 100%;
+  max-width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profilePic {
+  width: 50px;
+}

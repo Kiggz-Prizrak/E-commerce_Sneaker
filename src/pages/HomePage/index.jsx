@@ -7,7 +7,7 @@ export default function Home() {
   const data = useLoaderData();
 
   return (
-    <div>
+    <div className="homePageContainer">
       <ul>
         {data.map(({ id, title, thumbnail }, i) => (
           <li key={i}>

@@ -20,6 +20,7 @@ export default function Slideshow({
   return (
     <div>
       <button
+        autoFocus
         className="closeButton"
         onClick={() => {
           setSlideIndex(index);
@@ -54,7 +55,6 @@ export default function Slideshow({
       </div>
 
       <ul className="slidesGallery">
-
         {thumbnail.map((e, i) => (
           <li
             className={i === index ? "slideSelected" : ""}
@@ -68,7 +68,6 @@ export default function Slideshow({
             </button>
           </li>
         ))}
-        
       </ul>
     </div>
   );

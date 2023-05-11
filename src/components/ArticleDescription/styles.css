@@ -1,0 +1,91 @@
+.articleDescriptionContainer {
+  max-width: 500px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.articleTilte {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.articleDescription {
+  color: grey;
+}
+
+.articleFactory {
+  font-weight: 700;
+  color: orange;
+}
+
+.priceContainer {
+  display: flex;
+  align-items: center;
+}
+
+.articlePrice {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.articlePromotion {
+  color: orange;
+  background-color: hsl(25, 100%, 94%);
+  padding: 6px;
+  font-weight: 700;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+.articlePromotion p {
+  margin: 0;
+}
+
+.originalArticlePrice {
+  padding: 6px;
+  font-weight: 700;
+  color: grey;
+  text-decoration: line-through;
+}
+
+.inputsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputsQuantity {
+  background-color: #f7f8fd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 150px;
+  width: 100%;
+  border-radius: 12px;
+}
+.inputsQuantity {
+  font-weight: 700;
+  margin: 0;
+}
+
+.inputsQuantity button {
+  padding: 10px;
+  background-color: transparent;
+}
+
+.addToCartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 250px;
+  width: 100%;
+  border-radius: 12px;
+  background-color: orange;
+  color: white;
+}
+.addToCartButton p{
+   font-weight: 700;
+  margin-left: 20px;
+}

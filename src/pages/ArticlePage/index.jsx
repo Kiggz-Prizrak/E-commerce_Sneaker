@@ -37,7 +37,7 @@ export default function Article() {
           factory={factory}
           title={title}
           description={description}
-          price={price}
+          price={parseFloat(price).toFixed(2)}
           promotion={promotion}
         />
       </div>

@@ -9,8 +9,6 @@ export default function ArticleGallery({
   setOpenSlideshow,
   setSlideIndex,
 }) {
-  console.log(images);
-
   const [index, setIndex] = useState(0);
 
   return (

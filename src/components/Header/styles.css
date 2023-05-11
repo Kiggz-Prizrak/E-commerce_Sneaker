@@ -1,0 +1,20 @@
+.headerContainer {
+  border-bottom: solid 1px rgb(177, 176, 176);
+  max-height: 120px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
