@@ -3,10 +3,14 @@ import ArticleDescription from "../../components/ArticleDescription";
 import ArticleGallery from "../../components/ArticleGallery";
 import Slideshow from "../../components/Slideshow";
 import { useState } from "react";
+import { useSelector } from "react-redux";
+
 
 import './styles.css'
 
+
 export default function Article() {
+
   const [openSlideshow, setOpenSlideshow] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
 
@@ -21,8 +25,23 @@ export default function Article() {
     images,
   } = useLoaderData();
 
+  const cart = useSelector((state) => state.cart);
+
+  const getTotalQuantity = () => {
+    let total = 0;
+    cart.forEach((item) => {
+      console.log(item)
+      total += item.productQuantity;
+      console.log(total)
+    });
+    return total;
+  };
+
+
   return (
     <div className="articlePageContainer">
+      <p>{getTotalQuantity() || 0}</p>
+
       <div className="articleContainer">
         <ArticleGallery
           thumbnail={thumbnail}
