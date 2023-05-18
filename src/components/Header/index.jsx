@@ -1,12 +1,23 @@
+import { useState } from "react";
+import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
+
+import cartIcon from "../../assets/icon-cart.svg";
 import logo from '../../assets/logo.svg';
 
 import Cart from '../Cart'
 
 import "./styles.css";
 
+
 export default function Header() {
+
+  const [cartIsOpen, setCartIsOpen] = useState(false)
+  const cart = useSelector((state) => state.cart);
+
+  
+
   return (
     <div className="headerContainer">
       <div className="navBar">
@@ -19,7 +30,25 @@ export default function Header() {
           <NavLink to="/">Contact</NavLink>
         </nav>
       </div>
-      <Cart />
+
+      <div className="headerSection">
+        <button onClick={() => setCartIsOpen(!cartIsOpen)}>
+          <img src={cartIcon} alt="" />
+          {cart.length ? (
+            <span className="cartQuantity">{cart.length}</span>
+          ) : (
+            ""
+          )}
+        </button>
+        <img
+          src={`${import.meta.env.VITE_API_HOST}/mock/image-avatar.png`}
+          className="profilePic"
+          alt=""
+        />
+        <div className="CartSection"></div>
+      </div>
+      {cartIsOpen ? <Cart /> : ""}
+      
     </div>
   );
 }

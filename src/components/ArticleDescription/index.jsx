@@ -75,6 +75,7 @@ export default function ArticleDescription({
                     price: promotion
                       ? parseFloat((price * promotion) / 100).toFixed(2)
                       : price,
+                    image: "image",
                   })
                 );
               } else {
