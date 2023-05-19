@@ -40,7 +40,6 @@ export default function Article() {
 
   return (
     <div className="articlePageContainer">
-
       <div className="articleContainer">
         <ArticleGallery
           thumbnail={thumbnail}
@@ -57,11 +56,12 @@ export default function Article() {
           description={description}
           price={parseFloat(price).toFixed(2)}
           promotion={promotion}
+          image={thumbnail[0]}
         />
       </div>
 
       {openSlideshow ? (
-        <div className="slideshowContainer">
+        <div className="slideshowModal">
           <Slideshow
             thumbnail={thumbnail}
             images={images}

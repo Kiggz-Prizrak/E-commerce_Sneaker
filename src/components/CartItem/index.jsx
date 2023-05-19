@@ -16,7 +16,7 @@ export default function CartItem({ id, title, productQuantity, price, image }) {
 
   return (
     <>
-      <img src={`${import.meta.env.VITE_API_HOST}/mock/${image}`} alt={title} />
+      <img src={`${import.meta.env.VITE_API_HOST}/mock/product/thumbnail/${image}`} alt={title} />
       <div>
         <p>{title}</p>
         <div>

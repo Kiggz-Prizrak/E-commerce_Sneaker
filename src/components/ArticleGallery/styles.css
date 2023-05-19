@@ -8,7 +8,7 @@
   justify-content: space-between;
 }
 
-button {
+.articleGalleryContainer button {
   padding: 0;
   border: none;
   border-radius: 25px;

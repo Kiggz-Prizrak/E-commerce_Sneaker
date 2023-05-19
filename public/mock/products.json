@@ -19,7 +19,7 @@
       "title": "Fall Limited Edition Sneakers",
       "description": "The low-prfile snakers are your perfect casual wea companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer",
       "price": 250.0,
-      "promotion": 50,
+      "promotion": false,
       "thumbnail": [
         "image-product-1-thumbnail.jpg",
         "image-product-2-thumbnail.jpg",
@@ -59,7 +59,7 @@
           "title": "Fall Limited Edition Sneakers",
           "description": "The low-prfile snakers are your perfect casual wea companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer",
           "price": 250.0,
-          "promotion": 50,
+          "promotion": false,
           "thumbnail": [
             "image-product-1-thumbnail.jpg",
             "image-product-2-thumbnail.jpg",
@@ -79,7 +79,7 @@
             "title": "Fall Limited Edition Sneakers",
             "description": "The low-prfile snakers are your perfect casual wea companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer",
             "price": 250.0,
-            "promotion": 50,
+            "promotion": 25,
             "thumbnail": [
               "image-product-1-thumbnail.jpg",
               "image-product-2-thumbnail.jpg",

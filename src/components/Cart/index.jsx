@@ -6,19 +6,16 @@ import cartIcon from "../../assets/icon-cart.svg";
 import CartItem from "../CartItem";
 
 export default function Cart() {
-
   const cart = useSelector((state) => state.cart);
-
-
 
   return (
     <div className="cartContainer">
       <h2>Cart</h2>
-      <ul>
+      <ul className="cartItemList">
         {cart.map((e) => {
-          console.log(e)
+          console.log(e);
           return (
-            <li key={e.id}>
+            <li key={e.id} className="cartItemContainer">
               <CartItem
                 id={e.id}
                 title={e.title}
@@ -30,6 +27,7 @@ export default function Cart() {
           );
         })}
       </ul>
+      <button className="addToCartButton">purchase</button>
     </div>
   );
 }

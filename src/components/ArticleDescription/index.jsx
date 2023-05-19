@@ -15,11 +15,14 @@ export default function ArticleDescription({
   description,
   price,
   promotion,
+  image
 }) {
   const [productQuantity, setProductQuantity] = useState(0);
   const [errorQuantity, setErrorQuantity] = useState("");
 
   const dispatch = useDispatch();
+
+  console.log(image)
 
   return (
     <div className="articleDescriptionContainer">
@@ -75,7 +78,7 @@ export default function ArticleDescription({
                     price: promotion
                       ? parseFloat((price * promotion) / 100).toFixed(2)
                       : price,
-                    image: "image",
+                    image
                   })
                 );
               } else {

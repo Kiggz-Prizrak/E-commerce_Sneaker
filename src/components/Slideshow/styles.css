@@ -1,11 +1,17 @@
 
 /* ============================ */
 
+.slideShowContainer {
+  max-width: 750px;
+
+}
+
 .slideContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
+  
 }
 
 .closeButton {
@@ -13,6 +19,7 @@
   border: none;
   height: 50px;
   width: 50px;
+  right: 0px;
 }
 
 .closeButton img{
@@ -35,11 +42,13 @@
 .leftArrow{
   position: absolute;
   left: -30px;
+  background-color: white;
 }
 .rightArrow{
   position: absolute;
   transform: rotate(180deg);
   right: -30px;
+  background-color: white;
 }
 
 .slide{
@@ -53,10 +62,22 @@
   margin-top: 50px;
 }
 
+.slidesGallery li {
+  border-radius: 15px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.slidesGallery li img {
+  width: 100%;
+}
+
 .slidesGallery button {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0;
+  
 }
 
 .slideSelected {

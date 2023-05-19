@@ -27,12 +27,26 @@ body {
 }
 button {
   cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 button:focus-visible {
   border: solid 3px black;
 }
+button:active {
+  color: black;
+  font-weight: 900;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.2);
+
+
+}
 
 p {
   font-size: 16px;
+}
+
+ul {
+  padding: 0;
 }

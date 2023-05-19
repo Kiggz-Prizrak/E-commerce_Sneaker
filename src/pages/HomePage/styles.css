@@ -1,10 +1,10 @@
-ul {
+.cardList {
   display: flex;
   padding: 0;
   flex-wrap: wrap;
 }
 
-li {
+.card {
   overflow: hidden;
   border-radius: 25px;
   margin: 10px;

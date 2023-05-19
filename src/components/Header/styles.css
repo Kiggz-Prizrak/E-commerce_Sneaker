@@ -28,7 +28,31 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
+
+.cartButton{
+  position: relative;
+}
+
+.cartQuantity {
+  width: 23px;
+  height: 15px;
+  border-radius: 6px;
+  font-size: 12px;
+  background-color: orange;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1000;
+  top: -8px;
+  right: -5px;
+}
+
 .profilePic {
   width: 50px;
 }
+
