@@ -16,35 +16,45 @@ export default function CartItem({ id, title, productQuantity, price, image }) {
 
   return (
     <>
-      <img src={`${import.meta.env.VITE_API_HOST}/mock/product/thumbnail/${image}`} alt={title} />
-      <div>
-        <p>{title}</p>
+      
+        <img
+          src={`${
+            import.meta.env.VITE_API_HOST
+          }/mock/product/thumbnail/${image}`}
+          alt={title}
+        />
+        
         <div>
-          <p>{price}</p>
-          <div className="inputsQuantity">
-            <button
-              className="less"
-              onClick={() => {
-                if (productQuantity > 1) {
-                  dispatch(decrementQuantity(id));
-                }
-              }}
-            >
-              <img src={lessIcon} alt="" />
-            </button>
-            <p>{productQuantity}</p>
-            <button
-              className="more"
-              onClick={() => dispatch(incrementQuantity(id))}
-            >
-              <img src={moreIcon} alt="" />
-            </button>
+          <p>{title}</p>
+          <div>
+            <p>{price}</p>
+
+            <div className="inputsQuantity">
+              <button
+                className="less"
+                onClick={() => {
+                  if (productQuantity > 1) {
+                    dispatch(decrementQuantity(id));
+                  }
+                }}
+              >
+                <img src={lessIcon} alt="" />
+              </button>
+              <p>{productQuantity}</p>
+              <button
+                className="more"
+                onClick={() => dispatch(incrementQuantity(id))}
+              >
+                <img src={moreIcon} alt="" />
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <button onClick={() => dispatch(removeItem(id))}>
-        <img src={garbageIcon} alt="" />
-      </button>
+
+        <button onClick={() => dispatch(removeItem(id))}>
+          <img src={garbageIcon} alt="" />
+        </button>
+
     </>
   );
 }

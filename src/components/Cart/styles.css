@@ -3,6 +3,8 @@
   max-width: 400px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
   justify-content: space-between;
   background-color: white;
   /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
@@ -16,23 +18,38 @@
 
 .cartContainer h2 {
   font-size: 25px;
-  margin-left: 20px;
 }
 
 .cartItemList {
   margin: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .cartItemList li {
-  width: 100%;
   border-top: solid 1px rgba(37, 36, 36, 0.253);
-}
+      display: flex;
+    padding: 25px;
+    max-width: 385px;
 
+}
 
 .profilePic {
   width: 50px;
+}
+
+.purchaseBtn {
+  width: 100%;
+  background-color: orange;
+  color: white;
+  font-weight: 700;
+  max-width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  margin: 20px;
 }

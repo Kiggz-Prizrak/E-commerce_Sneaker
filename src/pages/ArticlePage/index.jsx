@@ -5,9 +5,7 @@ import Slideshow from "../../components/Slideshow";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 
-
 import './styles.css'
-
  
 export default function Article() {
 
@@ -24,19 +22,6 @@ export default function Article() {
     thumbnail,
     images,
   } = useLoaderData();
-
-  // const cart = useSelector((state) => state.cart);
-
-  // const getTotalQuantity = () => {
-  //   let total = 0;
-  //   cart.forEach((item) => {
-  //     console.log(item)
-  //     total += item.productQuantity;
-  //     console.log(total)
-  //   });
-  //   return total;
-  // };
-
 
   return (
     <div className="articlePageContainer">

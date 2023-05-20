@@ -6,7 +6,7 @@ import { cartReducer } from "./cartSlice";
 //   persistStore,
 //   persistReducer,
 //   FLUSH,
-//   REHYDRATE,
+//   REHYDRATE,²
 //   PAUSE,
 //   PERSIST,
 //   PURGE,

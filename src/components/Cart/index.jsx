@@ -27,7 +27,11 @@ export default function Cart() {
           );
         })}
       </ul>
-      <button className="addToCartButton">purchase</button>
+      {cart.length ? (
+        <button className="purchaseBtn">purchase</button>
+      ) : (
+        <h3>votre panier est vide</h3>
+      )}
     </div>
   );
 }
