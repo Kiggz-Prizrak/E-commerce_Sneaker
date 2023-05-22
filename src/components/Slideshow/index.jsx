@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
 
-import closeIcon from "../../assets/icon-close.svg";
 import arrow from "../../assets/icon-previous.svg"
 
 export default function Slideshow({

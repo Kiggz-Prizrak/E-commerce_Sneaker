@@ -2,21 +2,15 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
 
+import logo from "../../assets/logo.svg";
 
-import cartIcon from "../../assets/icon-cart.svg";
-import logo from '../../assets/logo.svg';
-
-import Cart from '../Cart'
+import Cart from "../Cart";
 
 import "./styles.css";
 
-
 export default function Header() {
-
-  const [cartIsOpen, setCartIsOpen] = useState(false)
+  const [cartIsOpen, setCartIsOpen] = useState(false);
   const cart = useSelector((state) => state.cart);
-
-  
 
   return (
     <div className="headerContainer">

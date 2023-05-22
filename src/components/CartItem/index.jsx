@@ -16,45 +16,43 @@ export default function CartItem({ id, title, productQuantity, price, image }) {
 
   return (
     <>
-      
-        <img
-          src={`${
-            import.meta.env.VITE_API_HOST
-          }/mock/product/thumbnail/${image}`}
-          alt={title}
-        />
-        
-        <div>
-          <p>{title}</p>
-          <div>
-            <p>{price}</p>
+      <button className="removeItemBtn" onClick={() => dispatch(removeItem(id))}>
+        <img src={garbageIcon} alt="" />
+      </button>
+      <img
+        className="cartItemImg"
+        src={`${import.meta.env.VITE_API_HOST}/mock/product/thumbnail/${image}`}
+        alt={title}
+      />
 
-            <div className="inputsQuantity">
-              <button
-                className="less"
-                onClick={() => {
-                  if (productQuantity > 1) {
-                    dispatch(decrementQuantity(id));
-                  }
-                }}
-              >
-                <img src={lessIcon} alt="" />
-              </button>
-              <p>{productQuantity}</p>
-              <button
-                className="more"
-                onClick={() => dispatch(incrementQuantity(id))}
-              >
-                <img src={moreIcon} alt="" />
-              </button>
-            </div>
+      <div>
+        <p>{title}</p>
+        <div className="articleDescription">
+          <p>{price}</p>
+
+          <div className="articlesQuantity">
+            <button
+              className="less"
+              onClick={() => {
+                if (productQuantity > 1) {
+                  dispatch(decrementQuantity(id));
+                }
+              }}
+            >
+              <img src={lessIcon} alt="" />
+            </button>
+            <p>{productQuantity}</p>
+            <button
+              className="more"
+              onClick={() => dispatch(incrementQuantity(id))}
+            >
+              <img src={moreIcon} alt="" />
+            </button>
           </div>
+
+          <p>{price * productQuantity} €</p>
         </div>
-
-        <button onClick={() => dispatch(removeItem(id))}>
-          <img src={garbageIcon} alt="" />
-        </button>
-
+      </div>
     </>
   );
 }

@@ -2,7 +2,6 @@ import "./styles.css";
 
 import { useSelector } from "react-redux";
 
-import cartIcon from "../../assets/icon-cart.svg";
 import CartItem from "../CartItem";
 
 export default function Cart() {
@@ -13,7 +12,6 @@ export default function Cart() {
       <h2>Cart</h2>
       <ul className="cartItemList">
         {cart.map((e) => {
-          console.log(e);
           return (
             <li key={e.id} className="cartItemContainer">
               <CartItem
@@ -30,7 +28,9 @@ export default function Cart() {
       {cart.length ? (
         <button className="purchaseBtn">purchase</button>
       ) : (
-        <h3>votre panier est vide</h3>
+        <div className="emptyCart">
+          <h3>Votre panier est vide</h3>
+        </div>
       )}
     </div>
   );
