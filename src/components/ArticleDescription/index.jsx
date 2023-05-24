@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 
 import { addToCart } from "../../store/cartSlice";
@@ -7,6 +7,7 @@ import "./styles.css";
 
 import moreIcon from "../../assets/icon-plus.svg";
 import lessIcon from "../../assets/icon-minus.svg";
+
 
 export default function ArticleDescription({
   id,
@@ -22,7 +23,8 @@ export default function ArticleDescription({
 
   const dispatch = useDispatch();
 
-  console.log(image)
+
+
 
   return (
     <div className="articleDescriptionContainer">
@@ -31,7 +33,7 @@ export default function ArticleDescription({
         <h2 className="articleTilte">{title}</h2>
         <p className="articleDescription">{description}</p>
         {promotion ? (
-          <div>
+          <div className="priceSection">
             <div className="priceContainer">
               <h3 className="articlePrice">
                 ${parseFloat((price * promotion) / 100).toFixed(2)}
@@ -43,7 +45,7 @@ export default function ArticleDescription({
             <p className="originalArticlePrice">{price}</p>
           </div>
         ) : (
-          <h3 className="articlePrice">{price}</h3>
+          <h3 className="articlePrice">$ {price}</h3>
         )}
         <div className="inputsContainer">
           <div className="inputsQuantity">
@@ -78,7 +80,7 @@ export default function ArticleDescription({
                     price: promotion
                       ? parseFloat((price * promotion) / 100).toFixed(2)
                       : price,
-                    image
+                    image,
                   })
                 );
               } else {

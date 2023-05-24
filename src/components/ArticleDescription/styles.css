@@ -54,6 +54,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .inputsQuantity {
@@ -85,7 +86,28 @@
   background-color: orange;
   color: white;
 }
-.addToCartButton p{
-   font-weight: 700;
+.addToCartButton p {
+  font-weight: 700;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .inputsQuantity {
+    width: 100%;
+    max-width: none;
+    margin-top: 15px;
+  }
+  .addToCartButton {
+    width: 100%;
+    max-width: none;
+    margin-top: 15px;
+  }
+  .priceSection {
+    display: flex;
+    justify-content: space-between;
+  }
+  .articlePrice {
+    font-size: 28px;
+  }
+
 }

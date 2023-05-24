@@ -67,3 +67,12 @@
 .emptyCart h3 {
   color: grey;
 }
+
+@media screen and (max-width: 650px) {
+  .cartContainer {
+    max-width: none;
+    width: 100%;
+
+    
+  }
+}

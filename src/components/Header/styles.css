@@ -20,18 +20,20 @@ nav {
   justify-content: space-around;
 }
 
-
+a {
+  color: grey;
+  font-weight: 400;
+  margin-left: 15px;
+}
 
 .headerSection {
-  width: 100%;
   max-width: 140px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-.cartButton{
+.cartButton {
   position: relative;
 }
 
@@ -54,5 +56,79 @@ nav {
 
 .profilePic {
   width: 50px;
+  padding: 5px;
 }
 
+.headerLogo {
+  margin-left: 15px;
+}
+
+.burgerMenuBtn {
+  display: none;
+}
+
+.navContainer {
+  width: 100%;
+}
+
+.navOpen {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .headerContainer {
+    height: 70px;
+    padding: 10px 20px; 
+  }
+
+  .burgerMenuBtn {
+    display: block;
+    z-index: 1002;
+  }
+  .navBar {
+    justify-content: flex-start;
+  }
+
+  .navClose {
+    display: none;
+  }
+
+  .navOpen {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(66, 66, 66, 0.836);
+    height: 100vh;
+  }
+  .navOpen nav {
+    padding-top: 15%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: flex-start;
+    background-color: white;
+  }
+
+  .navOpen nav a {
+    padding: 15px;
+    font-weight: 700;
+    color: black;
+    font-size: 28px;
+  }
+
+  .profilePic {
+    width: 30px;
+  }
+  /* 
+  .navContainer {
+    position: absolute;
+   
+    z-index: 1001;
+     padding-top: 40px;
+  } */
+}
