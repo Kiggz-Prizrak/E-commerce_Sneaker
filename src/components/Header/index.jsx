@@ -9,32 +9,72 @@ import Cart from "../Cart";
 import "./styles.css";
 
 export default function Header() {
-  const [navIsOpen, setNavIsOpen] = useState(true);
-
+  const [navIsOpen, setNavIsOpen] = useState(false);
   const [cartIsOpen, setCartIsOpen] = useState(false);
 
   const cart = useSelector((state) => state.cart);
 
   //  const [windowSize, setWindowSize] = useState(window.innerWidth);
 
-   useEffect(() => {
-     const handleWindowResize = () => {
-      setNavIsOpen(window.innerWidth >= 650);
-      //  window.innerWidth < 651 ? setNavIsOpen(false) : setNavIsOpen(true);
-     };
-     window.addEventListener("resize", handleWindowResize);
-     return () => {
-       window.removeEventListener("resize", handleWindowResize);
-     };
+  //  useEffect(() => {
+  //    const handleWindowResize = () => {
+  //     setNavIsOpen(window.innerWidth >= 650);
+  //     console.log(window.innerWidth);
+  //    };
+  //    window.addEventListener("resize", handleWindowResize);
+  //    return () => {
+  //      window.removeEventListener("resize", handleWindowResize);
+  //    };
     
-   }, []);
+  //  }, []);
 
      return (
        <div className="headerContainer">
-        
-         {/*  =============================== test navbar =========================== */}
+         {/*  ===============================  test navbar =========================== */}
 
          <div className="navBar">
+           <button
+             className="burgerMenuBtn"
+             onClick={() => {
+               setNavIsOpen(!navIsOpen);
+               if (cartIsOpen) {
+                 setCartIsOpen(false);
+               }
+             }}
+           >
+             {!navIsOpen ? (
+               <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg">
+                 <path
+                   d="M16 12v3H0v-3h16Zm0-6v3H0V6h16Zm0-6v3H0V0h16Z"
+                   fill="#69707D"
+                 />
+               </svg>
+             ) : (
+               <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg">
+                 <path
+                   d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z"
+                   fill="#69707D"
+                 />
+               </svg>
+             )}
+           </button>
+
+           <img className="headerLogo" src={logo} alt="Logo de Kasa" />
+
+           <div className={!navIsOpen ? "navClose" : "navOpen"}>
+             <nav>
+               <NavLink to="/">Collections</NavLink>
+               <NavLink to="/">Men</NavLink>
+               <NavLink to="/">Women</NavLink>
+               <NavLink to="/">About</NavLink>
+               <NavLink to="/">Contact</NavLink>
+             </nav>
+           </div>
+         </div>
+
+         {/*  ===============================  navbar =========================== */}
+
+         {/* <div className="navBar">
            {!navIsOpen ? (
              <button
                className="burgerMenuBtn"
@@ -76,9 +116,10 @@ export default function Header() {
                <NavLink to="/">Contact</NavLink>
              </nav>
            </div>
-         </div>
+         </div> */}
 
          {/*  ===============================cart section )============================= */}
+
          <div className="headerSection">
            {cartIsOpen ? <Cart /> : ""}
            <div className="cartButton">
