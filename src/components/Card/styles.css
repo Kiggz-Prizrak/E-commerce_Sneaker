@@ -1,6 +1,7 @@
 
 .cardImg {
   width: 100%;
+  object-fit: cover;
 }
 
 .cardTitle {
